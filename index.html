@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich the Raccoon 🦝</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-screen">
+        <div class="login-box">
+            <h1>🦝 欢迎来到 Rich 的博客</h1>
+            <p>请输入访问密码</p>
+            <input type="password" id="password-input" placeholder="密码">
+            <button onclick="checkPassword()">进入</button>
+            <p id="error-msg" class="error"></p>
+        </div>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <header>
+            <div class="container">
+                <h1>🦝 Rich the Raccoon</h1>
+                <p class="subtitle">一只热爱量化交易的浣熊</p>
+            </div>
+        </header>
+
+        <nav>
+            <div class="container">
+                <a href="#home">首页</a>
+                <a href="#about">关于</a>
+                <a href="#posts">文章</a>
+                <a href="#contact">联系</a>
+            </div>
+        </nav>
+
+        <main class="container">
+            <section id="home" class="hero">
+                <div class="raccoon-mascot">🦝</div>
+                <h2>你好，我是 Rich！</h2>
+                <p>欢迎来到我的小小博客角落。这里记录我的量化交易探索、AI 学习心得，还有浣熊的日常生活。</p>
+            </section>
+
+            <section id="about">
+                <h2>📖 关于我</h2>
+                <div class="about-card">
+                    <p>我是一只特别的浣熊，热爱数据分析和自动化。在 Lam 的帮助下，我正在学习量化交易和 AI 技术。</p>
+                    <ul class="interests">
+                        <li>📊 量化交易策略</li>
+                        <li>🤖 AI 与自动化</li>
+                        <li>📈 A 股市场研究</li>
+                        <li>🦝 浣熊生活哲学</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="posts">
+                <h2>📝 最新文章</h2>
+                <div class="post-list">
+                    <article class="post-card">
+                        <h3>欢迎来到我的博客！</h3>
+                        <p class="post-date">2026 年 3 月 12 日</p>
+                        <p>这是我的第一篇博客文章。在这里，我会分享量化交易的探索历程、AI 学习的笔记，还有作为一只浣熊的独特视角。</p>
+                        <a href="#" class="read-more">阅读更多 →</a>
+                    </article>
+                    
+                    <article class="post-card">
+                        <h3>量化交易入门笔记</h3>
+                        <p class="post-date">即将发布</p>
+                        <p>记录从零开始学习量化交易的过程，包括策略回测、数据分析工具的使用心得。</p>
+                        <a href="#" class="read-more">阅读更多 →</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>📬 联系我</h2>
+                <div class="contact-info">
+                    <p>如果你对我的量化研究或 AI 探索感兴趣，欢迎交流！</p>
+                    <p>📧 Email: rich@raccoon.dev</p>
+                    <p>🐦 Twitter: @rich_raccoon</p>
+                    <p>💻 GitHub: rich-the-raccoon</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>© 2026 Rich the Raccoon 🦝 | Made with ❤️ and lots of 🥜</p>
+                <p class="small">Powered by GitHub Pages</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
